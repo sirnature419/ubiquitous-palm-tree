@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Center - Nature Tech</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link to your main CSS -->
+  <!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Nature Tech Service Center</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>My Location</h2>
+      <p><strong>Address:</strong> Opp Rain Filling Station, Ogbomoso, Oyo State, Nigeria.</p>
+
+      <p><strong>Call :</strong> 
+        <a href="tel:+2349039554656">+2349039554656</a>
+      </p>
+
+      <p><strong>Get Directions:</strong>
+      <div id="map" style="height: 300px;"></div> 
+      </p>
+
+      <p><strong>Message on WhatsApp:</strong>
+        <a href="https://wa.me/2349039554656?text=Hi%2C%20Sir%20Nature%20at%20your%20service.">
+          Contact us on WhatsApp
+        </a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 <a href="index.html">Nature Tech.</a> All rights reserved.</p>
+  </footer>
+  <script>
+  // Coordinates for Ogomosho, Oyo State
+  var map = L.map('map').setView([7.8496, 3.9283], 13);
+
+  // Free OpenStreetMap tiles
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+
+  // Add a marker to your exact location
+  L.marker([7.8496, 3.9283]).addTo(map)
+    .bindPopup('Nature Tech Service Center')
+    .openPopup();
+</script>
+</body>
+</html>
