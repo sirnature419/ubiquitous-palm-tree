@@ -38,7 +38,7 @@ body {
   padding: 10px 15px;
   border-radius: 6px;
   cursor: pointer;
-  position: fixed;
+  position: absolute;
   top: 15px;
   right: 20px;
   z-index: 9999;
