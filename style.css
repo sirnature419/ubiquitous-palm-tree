@@ -368,7 +368,11 @@ footer a:hover {
 .service-card:hover .brand-img {
   transform: scale(1.05);
 }
-
+.how{
+    font-size:20px;
+    padding: 0;
+    text-align: center;
+}
 .service-card span {
   display: block;
   font-size: 16px;
